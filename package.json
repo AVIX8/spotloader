@@ -1,0 +1,23 @@
+{
+  "name": "spotloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "nexe main.js --build",
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "nodemon": "^2.0.12",
+    "puppeteer": "^10.2.0",
+    "truncate-utf8-bytes": "^1.0.2",
+    "youtube-music-api": "^1.0.6",
+    "ytdl-core": "^4.9.1"
+  }
+}
