@@ -41,6 +41,11 @@ const getLength = async (link) => {
 }
 
 module.exports.download = (link, outputPath, outputFilename) => {
+    if (!fs.existsSync(outputPath)) {
+        fs.mkdirSync(outputPath, {
+            recursive: true
+        });
+    }
     return new Promise((resolve, reject) => {
         mp4OutputPath = path.join(outputPath, `${outputFilename}.mp4`)
         mp3OutputPath = path.join(outputPath, `${outputFilename}.mp3`)

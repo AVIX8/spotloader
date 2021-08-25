@@ -3,7 +3,7 @@ const ytMusic = require('./youtube-music')
 const sanitize = require('./sanitize')
 
 spotify
-    .getSongs('https://open.spotify.com/playlist/2qU4zVLcVdBMyVCQnuCHa8?si=bUY4OpuuTFWbMn8RTcbZIg')
+    .getSongs(process.argv[2])
     .then(async (songs) => {
         for (let spotifySong of songs) {
             console.log('--------------------------------------------------------------------');
