@@ -7,6 +7,7 @@ spotloader is a program that allows you to download songs from spotify playlists
 
 ```
 git clone https://github.com/avix8/spotloader.git
+cd spotloader
 npm ci
 ```
 
